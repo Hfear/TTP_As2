@@ -3,13 +3,13 @@
 
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
 
-function myFilter(arr){
+function myFilter(arr, callback){
 
 let filtered = [];
 
 for(let i = 0; i<arr.length; i++)
 {
- if(morethan6(arr[i]))
+ if(callback(arr[i]))
  {
     filtered.push(arr[i]);
  }
@@ -17,7 +17,7 @@ for(let i = 0; i<arr.length; i++)
  return filtered; 
 }
 
-function morethan6(word){
+function morethan6(word, i, arr){
     if (word.length > 6)
     {
         return true; 
@@ -25,5 +25,5 @@ function morethan6(word){
 }
 
 let filtered = myFilter(words);
-//console.log(filtered);
+console.log(filtered);
 
