@@ -7,11 +7,10 @@ function moveZeros(nums)
 
     for(let i = 0; i < nums.length; i++)
     {
-        console.log(i + " = " + nums[i]);
+        //console.log(i + " = " + nums[i]);
 
         if(nums[i] === 0)
         {
-            //console.log("zero!");
             replace++; 
             nums.splice(i,1);
             //nums = nums.splice(i,1);
