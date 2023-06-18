@@ -16,7 +16,7 @@ function sum(arr)
     for(let i = 0; i< arr.length; i++)
     {
         //console.log(i);
-        sum = sum + arr[i];
+        sum += arr[i];
     }
     return sum;
 }
