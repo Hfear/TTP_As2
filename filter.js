@@ -24,6 +24,5 @@ function morethan6(word, i, arr){
     }
 }
 
-let filtered = myFilter(words);
+let filtered = myFilter(words,morethan6);
 console.log(filtered);
-
