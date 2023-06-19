@@ -7,17 +7,12 @@ function moveZeros(nums)
 
     for(let i = 0; i < nums.length; i++)
     {
-        //console.log(i + " = " + nums[i]);
 
         if(nums[i] === 0)
         {
             replace++; 
             nums.splice(i,1);
-            //nums = nums.splice(i,1);
             nums.push(0);
-
-            
-           
         }
     }
 

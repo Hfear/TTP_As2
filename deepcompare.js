@@ -1,14 +1,14 @@
 
 function deepEqual(obj1,obj2)
 {
+    let oneK = Object.keys(obj1);
+    let oneV = 
 
-    for( item in object)
-    {
-        console.log(item);
-    }
+    console.log(Object.keys(obj1))
+
 
 }
 
 let obj = {here: {is: "an"}, object: 2};
 
-deepEqual(obj,obj);
+console.log(deepEqual(obj,obj));
